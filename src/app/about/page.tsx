@@ -51,57 +51,78 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Features Grid */}
-      <section className="bg-muted/50 py-20">
+      {/* Promise & Features Section */}
+      <section className="bg-muted/50 py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">Why Choose Al Husnain?</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              We stand by the quality of our products and the satisfaction of our customers.
+            <h2 className="text-3xl md:text-5xl font-bold font-cinzel mb-4">Our <span className="text-amber-600">Promise</span></h2>
+            <div className="h-1 w-20 bg-amber-500 mx-auto rounded-full mb-6"></div>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+              When you choose Al Husnain Fragrance, you&apos;re not just buying a scent — you&apos;re embracing a legacy of trust, purity, and authenticity.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
               <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900/40 rounded-full flex items-center justify-center mb-6 text-amber-600">
                 <Leaf className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold mb-3">100% Organic</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Our attars are crafted using natural botanical extracts, free from harmful synthetic chemicals.
+              <h3 className="text-xl font-bold mb-3">Genuine Purity</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                Authentic products, crafted with meticulous care and the finest natural ingredients.
               </p>
             </div>
             
-            <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
               <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900/40 rounded-full flex items-center justify-center mb-6 text-amber-600">
                 <Award className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Premium Quality</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                We maintain the highest standards of purity, ensuring a long-lasting and evocative fragrance experience.
+              <h3 className="text-xl font-bold mb-3">Honest Luxury</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                Premium quality with fair, transparent pricing. We never compromise on excellence.
               </p>
             </div>
             
-            <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
               <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900/40 rounded-full flex items-center justify-center mb-6 text-amber-600">
                 <ShieldCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold mb-3">Trusted Brand</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                With a growing community of fragrance lovers across India, our reputation for excellence precedes us.
+              <h3 className="text-xl font-bold mb-3">Secure Delivery</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                Exquisite packaging ensures your fragrance arrives safely, wherever you are in India.
+              </p>
+            </div>
+
+            <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-all hover:-translate-y-1">
+              <div className="w-12 h-12 bg-amber-100 dark:bg-amber-900/40 rounded-full flex items-center justify-center mb-6 text-amber-600">
+                <Sparkles className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Pure Satisfaction</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                A customer-first approach that ensures every experience with us is truly memorable.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* Kashmir Section */}
       <section className="container mx-auto px-4 py-24 text-center lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            To provide an unparalleled olfactory experience that resonates with luxury, tradition, and personal style, bringing the finest scents of the world to your doorstep.
+        <div className="max-w-4xl mx-auto space-y-8">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 text-sm font-bold tracking-widest uppercase mb-4">
+            From Kashmir, With Love ❤️
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold font-cinzel leading-tight italic">
+            &quot;Every bottle carries the essence of Kashmir — its peace, purity, and poetic charm.&quot;
+          </h2>
+          <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            We invite you to explore our world of perfumes and discover the scent that uniquely defines your story.
           </p>
+          <div className="pt-8">
+            <p className="text-2xl font-cinzel font-bold text-amber-600 dark:text-amber-400">
+              Purity You Can Feel, Passion You Can Smell.
+            </p>
+          </div>
         </div>
       </section>
     </div>

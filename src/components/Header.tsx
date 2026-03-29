@@ -25,6 +25,15 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      {/* Marquee Bar */}
+      <div className="bg-amber-600 dark:bg-amber-700 text-white overflow-hidden py-1.5 text-xs font-semibold">
+        <div className="animate-marquee inline-block whitespace-nowrap">
+          Note: This site is currently under development and may load slowly. Thank you for your patience. &nbsp;&nbsp;|&nbsp;&nbsp; 
+          Note: This site is currently under development and may load slowly. Thank you for your patience. &nbsp;&nbsp;|&nbsp;&nbsp;
+          Note: This site is currently under development and may load slowly. Thank you for your patience.
+        </div>
+      </div>
+      
       <div className="container flex h-16 items-center justify-between px-4 mx-auto">
         <div className="flex items-center gap-3">
           {/* Logo */}
