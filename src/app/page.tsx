@@ -11,7 +11,7 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", "Royal Attar", "Popular Attar", "Car Perfumes", "Budget Combos"];
+  const categories = ["All", "Perfumes", "Royal Attar", "Popular Attar", "Budget Combos"];
 
   const filteredProducts = mockProducts.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||

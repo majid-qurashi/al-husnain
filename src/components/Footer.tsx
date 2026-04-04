@@ -32,7 +32,7 @@ export function Footer() {
         <div className="h-px w-20 bg-border"></div>
 
         <p className="text-center text-sm leading-loose text-muted-foreground">
-          Website designed & developed by <span className="font-semibold text-foreground"><a href="https://qurashi.vercel.app" className="hover:text-amber-600 transition-colors">Majid</a></span>
+          Website designed & developed by <span className="font-semibold text-foreground"><a href="https://qurashi.vercel.app" className="hover:text-amber-600 transition-colors">Majid Qurashi</a></span>
         </p>
       </div>
     </footer>
