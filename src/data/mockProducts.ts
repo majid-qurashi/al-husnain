@@ -13,16 +13,16 @@ export const mockProducts: Product[] = [
   {
     id: "1",
     name: "Black Opium Attar",
-    price: 999,
+    price: 200,
     imageUrl: "/products/black opuim.jpg",
     volume: "6ml",
     category: "Popular Attar",
     rating: 4.8,
     volumes: [
-      { label: "3ml", price: 999 },
-      { label: "6ml", price: 1299 },
-      { label: "12ml", price: 999 },
-      { label: "15ml", price: 999 }
+      { label: "3ml", price: 200 },
+      { label: "6ml", price: 699 },
+      { label: "12ml", price: 549 },
+      { label: "15ml", price: 649 }
     ]
   },
   {
@@ -54,39 +54,47 @@ export const mockProducts: Product[] = [
   {
     id: "4",
     name: "Musk Rijali Attar",
-    price: 899,
+    price: 249,
     imageUrl: "/products/musk_rijali.jpg",
     volume: "6ml",
     category: "Popular Attar",
     rating: 4.7,
     volumes: [
-      { label: "3ml", price: 999 },
-      { label: "6ml", price: 1299 },
-      { label: "12ml", price: 999 },
-      { label: "15ml", price: 999 }
+      { label: "3ml", price: 249 },
+      { label: "6ml", price: 399 },
+      { label: "12ml", price: 699 },
+      { label: "15ml", price: 749 }
     ]
   },
   {
     id: "5",
-    name: "Khamrah",
-    price: 199,
+    name: "Khamrah Perfume",
+    price: 200,
     imageUrl: "/products/khamrah.jpg",
     volume: "6ml",
     category: "Perfumes",
     rating: 4.8,
     volumes: [
-      { label: "8ml", price: 199 },
-      { label: "30ml", price: 400 }
+      { label: "3ml", price: 200 },
+      { label: "6ml", price: 299 },
+      { label: "12ml", price: 549 },
+      { label: "15ml", price: 649 }
     ]
   },
   {
     id: "6",
-    name: "BR-540 Luxury Attar",
-    price: 1599,
+    name: "BR-540 Attar",
+    price: 249,
     imageUrl: "/products/BR-540.jpg",
     volume: "6ml",
     category: "Royal Attar",
-    rating: 4.9
+    rating: 4.9,
+    volumes: [
+      { label: "3ml", price: 200 },
+      { label: "6ml", price: 699 },
+      { label: "12ml", price: 549 },
+      { label: "15ml", price: 649 }
+    ]
   },
   {
     id: "7",
@@ -156,6 +164,33 @@ export const mockProducts: Product[] = [
     imageUrl: "/products/hexa pack purfumes.jpeg",
     volume: "8ml x 6",
     category: "Perfumes",
+    rating: 4.9
+  },
+  {
+    id: "14",
+    name: "Electric Burner Perfume (Room)",
+    price: 390,
+    imageUrl: "/products/electric burner.jpeg",
+    volume: "1 Unit",
+    category: "Home Fragrance",
+    rating: 4.8
+  },
+  {
+    id: "15",
+    name: "Mini Combo Pack Attar",
+    price: 549,
+    imageUrl: "/products/mini combo atter.jpeg",
+    volume: "6ml Set",
+    category: "Budget Combos",
+    rating: 4.9
+  },
+  {
+    id: "16",
+    name: "Car Perfume + Attar Combo",
+    price: 399,
+    imageUrl: "/products/car perfume.jpeg",
+    volume: "8ml + 6ml",
+    category: "Budget Combos",
     rating: 4.9
   }
 ];

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ProductCard } from "@/components/ProductCard";
 import { mockProducts } from "@/data/mockProducts";
-import { Search } from "lucide-react";
+import { Search, ChevronDown, Filter } from "lucide-react";
 import { Testimonials } from "@/components/Testimonials";
 import { LeaderSection } from "@/components/LeaderSection";
 
@@ -11,7 +11,7 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", "Perfumes", "Royal Attar", "Popular Attar", "Budget Combos", "Car Perfumes"];
+  const categories = ["All", "Perfumes", "Royal Attar", "Popular Attar", "Budget Combos", "Car Perfumes", "Home Fragrance"];
 
   const filteredProducts = mockProducts.filter((product) => {
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -25,8 +25,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-muted/50 pt-12 pb-2 md:py-20 px-4 text-center">
         <div className="container mx-auto max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 font-cinzel text-balance">
-            Elevate Your <span className="text-amber-600 dark:text-amber-400 font-cursive italic lowercase lg:text-7xl">Senses</span>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-8 font-cinzel text-balance flex flex-wrap justify-center gap-x-4">
+            <span className="opacity-0 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>Elevate</span>
+            <span className="opacity-0 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>Your</span>
+            <span className="text-amber-600 dark:text-amber-400 font-cursive italic lowercase lg:text-7xl opacity-0 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>Senses</span>
           </h1>
           {/* Search Bar */}
           <div className="relative max-w-md mx-auto mb-8">
@@ -43,20 +45,24 @@ export default function Home() {
           </div>
 
           {/* Category Filter */}
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-full text-[10px] md:text-xs font-bold transition-all border ${
-                  selectedCategory === category
-                    ? "bg-amber-600 text-white border-amber-600 shadow-md scale-105"
-                    : "bg-background/50 backdrop-blur-sm text-muted-foreground border-border hover:border-amber-500 hover:text-amber-600"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
+          <div className="relative max-w-[200px] mx-auto mb-4 group font-cinzel">
+            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-muted-foreground group-hover:text-amber-600 transition-colors">
+              <Filter className="w-4 h-4" />
+            </div>
+            <select
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+              className="block w-full p-3 pl-10 pr-10 text-xs font-bold border rounded-xl bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 dark:border-border transition-all shadow-md appearance-none cursor-pointer hover:border-amber-500"
+            >
+              {categories.map((category) => (
+                <option key={category} value={category} className="bg-background text-foreground font-sans">
+                  {category}
+                </option>
+              ))}
+            </select>
+            <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-muted-foreground group-hover:text-amber-600 transition-colors">
+              <ChevronDown className="w-4 h-4" />
+            </div>
           </div>
         </div>
       </section>

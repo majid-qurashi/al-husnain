@@ -109,17 +109,17 @@ export default function AboutPage() {
       {/* Developer Credits Section */}
       <section className="container mx-auto px-4 py-16 text-center border-t border-border/50">
         <div className="max-w-2xl mx-auto space-y-4">
-          <p className="text-lg md:text-xl font-medium text-muted-foreground font-cinzel">
+          <p className="text-[10px] md:text-xs font-medium text-muted-foreground/80 font-cinzel tracking-wider">
             This site is designed and developed by{" "}
             <a 
               href="mailto:majidqurashi958@gmail.com" 
-              className="text-amber-600 dark:text-amber-400 hover:underline font-cursive text-2xl md:text-3xl"
+              className="text-amber-600 dark:text-amber-400 hover:underline font-cursive text-sm md:text-base ml-1"
             >
               Er. Majid Qurashi
             </a>
           </p>
-          <p className="text-[10px] md:text-xs text-muted-foreground/60 uppercase tracking-[0.2em] font-medium max-w-md mx-auto leading-relaxed font-cinzel">
-            Developer is a Software Engineer and student of engineering at GCET Ganderbal Kashmir
+          <p className="text-[7px] md:text-[8px] text-muted-foreground/40 uppercase tracking-[0.4em] font-medium max-w-md mx-auto leading-relaxed font-mono">
+            Software Engineer & Engineering Student at GCET Ganderbal Kashmir
           </p>
         </div>
       </section>
