@@ -23,7 +23,7 @@ export function ProductCard({ product }: { product: Product }) {
   };
 
   const handleBuyNow = () => {
-    const phoneNumber = "919541457794";
+    const phoneNumber = "919055352698";
     const message = `Asalamualikum ,\nI want to order ${product.name} (${currentVolume}) at ₹${currentPrice}.`;
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
@@ -50,7 +50,7 @@ export function ProductCard({ product }: { product: Product }) {
             <span className="text-[10px] font-bold text-muted-foreground">{product.rating}</span>
           </div>
         </div>
-        
+
         <h3 className="text-sm font-semibold leading-tight line-clamp-2 min-h-[2.5rem]" title={product.name}>
           {product.name}
         </h3>
@@ -65,11 +65,10 @@ export function ProductCard({ product }: { product: Product }) {
                   e.stopPropagation();
                   setSelectedVolIdx(idx);
                 }}
-                className={`px-2.5 py-1 text-[10px] font-medium rounded-full border transition-all ${
-                  selectedVolIdx === idx
+                className={`px-2.5 py-1 text-[10px] font-medium rounded-full border transition-all ${selectedVolIdx === idx
                     ? "bg-foreground text-background border-foreground shadow-sm scale-105"
                     : "bg-background text-foreground/70 border-border hover:border-foreground/50"
-                }`}
+                  }`}
               >
                 {vol.label}
               </button>
@@ -86,15 +85,14 @@ export function ProductCard({ product }: { product: Product }) {
               </span>
             )}
           </p>
-          
+
           <div className="flex gap-2 mt-1">
             <button
               onClick={handleAddToCart}
-              className={`flex-1 rounded-lg py-1 sm:py-2.5 text-[8px] sm:text-[10px] font-black uppercase tracking-tight transition-all active:scale-95 shadow-md transform hover:-translate-y-0.5 ${
-                isAdded 
-                  ? "bg-green-600 text-white" 
+              className={`flex-1 rounded-lg py-1 sm:py-2.5 text-[8px] sm:text-[10px] font-black uppercase tracking-tight transition-all active:scale-95 shadow-md transform hover:-translate-y-0.5 ${isAdded
+                  ? "bg-green-600 text-white"
                   : "bg-gradient-to-br from-orange-400 to-orange-600 text-white hover:shadow-orange-500/20"
-              }`}
+                }`}
             >
               {isAdded ? "✓ Added" : "Add to Cart"}
             </button>

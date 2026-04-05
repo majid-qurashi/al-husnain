@@ -11,21 +11,21 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Qurashi",
+    name: "Fayiq",
     role: "Regular Customer",
     content: "The quality of the attars is unparalleled. The scent lingers for days, and the packaging is exquisite. Al Husnain Fragrance has become my go-to for all my fragrance needs.",
     rating: 5,
   },
   {
     id: 2,
-    name: "Danish",
+    name: "Aamir",
     role: "Fragrance Enthusiast",
     content: "Truly premium collection! I tried the 'Oudh-e-Arabia' and it's by far the best I've ever used. Highly recommend to everyone who loves luxury scents.",
     rating: 5,
   },
   {
     id: 3,
-    name: "Sajid",
+    name: "Drx Sajid",
     role: "Medical Profession",
     content: "What I love about Al Husnain Fragrance is the authenticity. These are not just perfumes; they are an experience. Shipping was fast too!",
     rating: 4,

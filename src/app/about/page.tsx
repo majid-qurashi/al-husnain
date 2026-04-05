@@ -7,8 +7,8 @@ export default function AboutPage() {
       <section className="relative bg-muted py-24 px-4 text-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-amber-500/10 to-transparent pointer-events-none" />
         <div className="container mx-auto max-w-4xl relative z-10">
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-            Our Story: The Essence of <span className="text-amber-600 dark:text-amber-400">Purity</span>
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 font-cinzel">
+            Our <span className="text-amber-600 dark:text-amber-400 font-cursive italic lowercase lg:text-7xl">Story</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">
             At Al Husnain Fragrance, we believe that a scent is more than just a fragrance; it's a journey into the soul of luxury.
@@ -106,23 +106,21 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Kashmir Section */}
-      <section className="container mx-auto px-4 py-24 text-center lg:px-8">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 text-sm font-bold tracking-widest uppercase mb-4">
-            From Kashmir, With Love ❤️
-          </div>
-          <h2 className="text-3xl md:text-5xl font-extrabold font-cinzel leading-tight italic">
-            &quot;Every bottle carries the essence of Kashmir — its peace, purity, and poetic charm.&quot;
-          </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            We invite you to explore our world of perfumes and discover the scent that uniquely defines your story.
+      {/* Developer Credits Section */}
+      <section className="container mx-auto px-4 py-16 text-center border-t border-border/50">
+        <div className="max-w-2xl mx-auto space-y-4">
+          <p className="text-lg md:text-xl font-medium text-muted-foreground font-cinzel">
+            This site is designed and developed by{" "}
+            <a 
+              href="mailto:majidqurashi958@gmail.com" 
+              className="text-amber-600 dark:text-amber-400 hover:underline font-cursive text-2xl md:text-3xl"
+            >
+              Er. Majid Qurashi
+            </a>
           </p>
-          <div className="pt-8">
-            <p className="text-2xl font-cinzel font-bold text-amber-600 dark:text-amber-400">
-              Purity You Can Feel, Passion You Can Smell.
-            </p>
-          </div>
+          <p className="text-[10px] md:text-xs text-muted-foreground/60 uppercase tracking-[0.2em] font-medium max-w-md mx-auto leading-relaxed font-cinzel">
+            Developer is a Software Engineer and student of engineering at GCET Ganderbal Kashmir
+          </p>
         </div>
       </section>
     </div>

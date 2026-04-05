@@ -17,32 +17,38 @@ export const mockProducts: Product[] = [
     imageUrl: "/products/black opuim.jpg",
     volume: "6ml",
     category: "Popular Attar",
-    rating: 4.8
+    rating: 4.8,
+    volumes: [
+      { label: "3ml", price: 999 },
+      { label: "6ml", price: 1299 },
+      { label: "12ml", price: 999 },
+      { label: "15ml", price: 999 }
+    ]
   },
   {
     id: "2",
-    name: "Rave Now Attar",
-    price: 1299,
+    name: "Rave Now ",
+    price: 199,
     imageUrl: "/products/rave_now.jpg",
     volume: "6ml",
     category: "Perfumes",
     rating: 4.9,
     volumes: [
-      { label: "8ml", price: 1299 },
-      { label: "30ml", price: 3299 }
+      { label: "8ml", price: 199 },
+      { label: "30ml", price: 400 }
     ]
   },
   {
     id: "3",
-    name: "Baccarat Rouge Attar",
-    price: 1499,
+    name: "Baccarat Rouge",
+    price: 199,
     imageUrl: "/products/baccarat_rough.jpg",
     volume: "6ml",
     category: "Perfumes",
     rating: 5.0,
     volumes: [
-      { label: "8ml", price: 1499 },
-      { label: "30ml", price: 3999 }
+      { label: "8ml", price: 199 },
+      { label: "30ml", price: 400 }
     ]
   },
   {
@@ -52,19 +58,25 @@ export const mockProducts: Product[] = [
     imageUrl: "/products/musk_rijali.jpg",
     volume: "6ml",
     category: "Popular Attar",
-    rating: 4.7
+    rating: 4.7,
+    volumes: [
+      { label: "3ml", price: 999 },
+      { label: "6ml", price: 1299 },
+      { label: "12ml", price: 999 },
+      { label: "15ml", price: 999 }
+    ]
   },
   {
     id: "5",
-    name: "Khamrah Attar",
-    price: 1199,
+    name: "Khamrah",
+    price: 199,
     imageUrl: "/products/khamrah.jpg",
     volume: "6ml",
     category: "Perfumes",
     rating: 4.8,
     volumes: [
-      { label: "8ml", price: 1199 },
-      { label: "30ml", price: 2999 }
+      { label: "8ml", price: 199 },
+      { label: "30ml", price: 400 }
     ]
   },
   {
@@ -79,19 +91,71 @@ export const mockProducts: Product[] = [
   {
     id: "7",
     name: "Premium Combo Pack",
-    price: 2499,
+    price: 799,
     imageUrl: "/products/combo pack.jpg",
     volume: "Set of 3",
     category: "Budget Combos",
-    rating: 5.0
+    rating: 5.0,
+    volumes: [
+      { label: "30ml", price: 799 }
+    ]
+    
   },
   {
     id: "8",
     name: "Special Gift Combo",
-    price: 2999,
+    price: 349,
     imageUrl: "/products/combo pack 2.jpg",
     volume: "Set of 3",
     category: "Budget Combos",
+    rating: 4.9,
+    volumes: [
+      { label: "8ml", price: 349 }
+    ]
+  },
+  {
+    id: "9",
+    name: "Luxury Car Hanging",
+    price: 249,
+    imageUrl: "/products/car hanging.jpeg",
+    volume: "Per pack",
+    category: "Car Perfumes",
+    rating: 4.8
+  },
+  {
+    id: "10",
+    name: "Atter Combo Pack",
+    price: 399,
+    imageUrl: "/products/atter combo 3.jpeg",
+    volume: "Set of 3",
+    category: "Budget Combos",
+    rating: 4.9
+  },
+  {
+    id: "11",
+    name: "Trail Atter Combo",
+    price: 299,
+    imageUrl: "/products/trail atter combo.jpeg",
+    volume: "1.5ml each",
+    category: "Budget Combos",
+    rating: 4.7
+  },
+  {
+    id: "12",
+    name: "Gift Pack Itter",
+    price: 399,
+    imageUrl: "/products/gift pack atter.jpeg",
+    volume: "Buy 3 Get 1 Free",
+    category: "Budget Combos",
+    rating: 5.0
+  },
+  {
+    id: "13",
+    name: "8ml Hexa Pack Purfumes",
+    price: 599,
+    imageUrl: "/products/hexa pack purfumes.jpeg",
+    volume: "8ml x 6",
+    category: "Perfumes",
     rating: 4.9
   }
 ];

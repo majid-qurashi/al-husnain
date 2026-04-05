@@ -45,11 +45,11 @@ export function Header() {
           <img 
             src="https://i.ibb.co/6cgNBtcn/logo.jpg" 
             alt="Al Hasnain Fragrances Logo" 
-            width={56}
-            height={56}
-            className="h-14 w-14 rounded-full object-cover border-2 border-amber-500/20 shadow-lg"
+            width={48}
+            height={48}
+            className="h-10 w-10 sm:h-14 sm:w-14 rounded-full object-cover border-2 border-amber-500/20 shadow-lg"
           />
-          <span className="text-xl md:text-2xl font-bold tracking-wider font-cinzel bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 bg-clip-text text-transparent hidden sm:inline-block">
+          <span className="text-[10px] sm:text-lg md:text-2xl font-bold tracking-wider font-cinzel bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 bg-clip-text text-transparent">
             AL HASNAIN FRAGRANCES
           </span>
         </div>
