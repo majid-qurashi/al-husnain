@@ -144,8 +144,8 @@ export function CartDrawer({ isOpen, onClose }: { isOpen: boolean; onClose: () =
             <div className="max-w-3xl mx-auto space-y-6">
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-[10px] font-black text-muted-foreground uppercase tracking-[0.3em]">
-                  <span>Premium Handling</span>
-                  <span className="text-green-600">Complimentary</span>
+                  <span>Shipping Charges</span>
+                  <span className="text-green-600">Free</span>
                 </div>
                 <div className="flex items-center justify-between text-2xl sm:text-5xl font-black">
                   <span className="text-foreground font-cinzel italic tracking-tighter">Total Due</span>
