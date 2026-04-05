@@ -6,7 +6,8 @@ import { Product } from "@/data/mockProducts";
 import { useCart } from "@/context/CartContext";
 
 export function ProductCard({ product }: { product: Product }) {
-  const [selectedVolIdx, setSelectedVolIdx] = useState(product.volumes && product.volumes.length > 0 ? -1 : 0);
+  const hasMultipleVolumes = product.volumes && product.volumes.length > 1;
+  const [selectedVolIdx, setSelectedVolIdx] = useState(hasMultipleVolumes ? -1 : 0);
   const [showError, setShowError] = useState(false);
 
   const hasVolumes = product.volumes && product.volumes.length > 0;
@@ -19,7 +20,7 @@ export function ProductCard({ product }: { product: Product }) {
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (hasVolumes && selectedVolIdx === -1) {
+    if (hasMultipleVolumes && selectedVolIdx === -1) {
       setShowError(true);
       setTimeout(() => setShowError(false), 3000);
       return;
@@ -32,7 +33,7 @@ export function ProductCard({ product }: { product: Product }) {
 
   const handleBuyNow = (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (hasVolumes && selectedVolIdx === -1) {
+    if (hasMultipleVolumes && selectedVolIdx === -1) {
       setShowError(true);
       setTimeout(() => setShowError(false), 3000);
       return;
@@ -69,8 +70,8 @@ export function ProductCard({ product }: { product: Product }) {
           {product.name}
         </h3>
 
-        {/* Volume Selection Chips */}
-        {hasVolumes && (
+        {/* Volume Selection Chips - Only show if there are multiple options */}
+        {hasMultipleVolumes && (
           <div className="flex flex-wrap gap-1.5 my-1">
             {product.volumes!.map((vol, idx) => (
               <button
@@ -92,10 +93,10 @@ export function ProductCard({ product }: { product: Product }) {
 
         <div className="mt-auto flex flex-col gap-2">
           <p className="font-bold text-base text-foreground">
-            ₹{hasVolumes && selectedVolIdx === -1 ? `${product.volumes![0].price}+` : currentPrice}
-            {!hasVolumes && (
+            ₹{hasMultipleVolumes && selectedVolIdx === -1 ? `${product.volumes![0].price}+` : currentPrice}
+            {( !hasMultipleVolumes) && (
               <span className="text-[10px] font-normal text-muted-foreground ml-1">
-                ({product.volume})
+                ({currentVolume})
               </span>
             )}
           </p>
