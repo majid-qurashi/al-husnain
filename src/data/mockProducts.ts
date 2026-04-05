@@ -37,21 +37,7 @@ export const mockProducts: Product[] = [
       { label: "30ml", price: 400 }
     ]
   },
-  {
-    id: "5",
-    name: "Khamrah Attar",
-    price: 200,
-    imageUrl: "/products/khamrah-purfume.jpeg",
-    volume: "6ml",
-    category: "Perfumes",
-    rating: 4.8,
-    volumes: [
-      { label: "3ml", price: 200 },
-      { label: "6ml", price: 299 },
-      { label: "12ml", price: 549 },
-      { label: "15ml", price: 649 }
-    ]
-  },
+ 
   {
     id: "13",
     name: "8ml Hexa Pack Purfumes",
@@ -96,6 +82,21 @@ export const mockProducts: Product[] = [
     name: "Black Opium Attar",
     price: 200,
     imageUrl: "/products/black opuim.jpg",
+    volume: "6ml",
+    category: "Popular Attar",
+    rating: 4.8,
+    volumes: [
+      { label: "3ml", price: 200 },
+      { label: "6ml", price: 299 },
+      { label: "12ml", price: 549 },
+      { label: "15ml", price: 649 }
+    ]
+  },
+   {
+    id: "5",
+    name: "Khamrah Attar",
+    price: 200,
+    imageUrl: "/products/khamrah-purfume.jpeg",
     volume: "6ml",
     category: "Popular Attar",
     rating: 4.8,
